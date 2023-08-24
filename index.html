@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Lakshmi Medical Centre</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon1.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  
+<script>
+  $(document).ready(function() {
+    // Smooth scroll to the "Health conditions" section when the "Order" button is clicked
+    $('#bottone5-order').click(function() {
+      $('html, body').animate({
+        scrollTop: $('#order').offset().top
+      }, 1000); // Adjust the animation speed (in milliseconds) as needed
+    });
+  });
+</script>
+</head>
+<style>
+/*log in button*/
+button {
+ display: inline-block;
+ border-radius: 12px;
+ background-color:transparent;
+ border: none;
+ color: black;
+ text-align: center;
+ font-size: 17px;
+ padding: 16px;
+ width: 130px;
+ transition: all 0.5s;
+ cursor: pointer;
+ margin-right: -20px;
+ margin-top: 3px;
+}
+
+button span {
+ cursor: pointer;
+ display: inline-block;
+ position: relative;
+ transition: 0.5s;
+}
+
+button span:after {
+ content: '»';
+ position: absolute;
+ opacity: 0;
+ top: 0;
+ right: -15px;
+ transition: 0.5s;
+}
+
+button:hover span {
+ padding-right: 15px;
+}
+
+button:hover span:after {
+ opacity: 1;
+ right: 0;
+}
+/*log in button ends here*/
+/*cart button*/
+.CartBtn {
+  width: 140px;
+  height: 40px;
+  border-radius: 12px;
+  border: none;
+  background-color:transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: .5s;
+  overflow: hidden;
+  position: relative;
+  margin-top: 21px;
+}
+
+.IconContainer {
+  position: absolute;
+  left: -50px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 2;
+  transition-duration: .5s;
+}
+
+.icon {
+  border-radius: 1px;
+}
+
+.text {
+  height: 100%;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:black;
+  z-index: 1;
+  transition-duration: .5s;
+  font-size: 1.04em;
+  font-weight: 600;
+}
+
+.CartBtn:hover .IconContainer {
+  transform: translateX(58px);
+  border-radius: 40px;
+  transition-duration: .5s;
+  margin-bottom: 18px;
+}
+
+.CartBtn:hover .text {
+  transform: translate(10px,0px);
+  transition-duration: .5s;
+}
+
+.CartBtn:active {
+  transform: scale(0.95);
+  transition-duration: .5s;
+}
+/*cart button ends here*/
+/*contact us*/
+#bottone5 {
+ align-items: center;
+ background-color:transparent;
+ border: 0px solid rgba(0, 0, 0, 0.1);
+ border-radius: .25rem;
+ box-shadow: transparent;
+ box-sizing: border-box;
+ color:black;
+ cursor: pointer;
+ display: inline-flex;
+ font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+ font-size: 16px;
+ font-weight: 600;
+ justify-content: center;
+ line-height: 1.25;
+ min-height: 3rem;
+ padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+ text-decoration: none;
+ transition: all 250ms;
+ user-select: none;
+ -webkit-user-select: none;
+ touch-action: manipulation;
+ vertical-align: baseline;
+ width: auto;
+ margin-top: 12px;
+}
+
+#bottone5:hover,
+#bottone5:focus {
+ border-color: transparent;
+ box-shadow: transparent;
+ color:transparent;
+}
+
+#bottone5:hover {
+ transform: translateY(-1px);
+}
+
+#bottone5:active {
+ background-color:transparent;
+ border-color:transparent;
+ box-shadow: transparent;
+ color: transparent;
+ transform: translateY(0);
+}
+/*contact us ends here*/
+/*about us*/
+#bottone5 {
+ align-items: center;
+ background-color:transparent;
+ border: 0px solid rgba(0, 0, 0, 0.1);
+ border-radius: .25rem;
+ box-shadow: transparent;
+ box-sizing: border-box;
+ color:black;
+ cursor: pointer;
+ display: inline-flex;
+ font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+ font-size: 16px;
+ font-weight: 600;
+ justify-content: center;
+ line-height: 1.25;
+ min-height: 3rem;
+ padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+ text-decoration: none;
+ transition: all 250ms;
+ user-select: none;
+ -webkit-user-select: none;
+ touch-action: manipulation;
+ vertical-align: baseline;
+ width: auto;
+ margin-top: 12px;
+}
+
+#bottone5:hover,
+#bottone5:focus {
+ border-color: transparent;
+ box-shadow: transparent;
+ color:transparent;
+}
+
+#bottone5:hover {
+ transform: translateY(-1px);
+}
+
+#bottone5:active {
+ background-color:transparent;
+ border-color:transparent;
+ box-shadow: transparent;
+ color: transparent;
+ transform: translateY(0);
+}
+/*about us ends here*/
+/*jumbotron*/
+.jumbotron {
+    background-color: #A8D4FD;
+    color: #fff;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+    background-image: url(doodlingfinal2.png);
+    height: 250px;
+    margin-bottom: 0;
+  }
+/*searchbar*/
+.search {
+  display: inline-block;
+  position: relative;
+}
+
+.search input[type="text"] {
+  width: 800px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+.search button[type="submit"] {
+  background-color:#32A861;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  top: 0;
+  right: 0;
+  transition: .9s ease;
+}
+
+.search button[type="submit"]:hover {
+  transform: scale(1.1);
+  color: rgb(255, 255, 255);
+  background-color: #26814A;
+}
+
+/*searchbar ends here*/
+/*jumbotron ends here*/
+/*Product card*/
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+/*Product card ends here*/
+/*file upload*/
+.custum-file-upload {
+  height: 120px;
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  gap: 20px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #cacaca;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 48px 35px -48px rgba(0,0,0,0.1);
+}
+
+.custum-file-upload .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custum-file-upload .icon svg {
+  height: 50px;
+  fill: rgba(75, 85, 99, 1);
+}
+
+.custum-file-upload .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custum-file-upload .text span {
+  font-weight: 400;
+  color: rgba(75, 85, 99, 1);
+}
+
+.custum-file-upload input {
+  display: none;
+}
+/*file upload button ends*/
+/*product cards*/
+#card1
+{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  height: 340px;
+}
+
+.price {
+  color:gray;
+  font-size: 18px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color:#4169E1;
+  text-align: center;
+  cursor: pointer;
+  width: 180px;
+  font-size: 18px;
+  margin-left: -20px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+  width:180px;
+  background-color:green;
+}
+/*product cards ends here*/
+/*about us section*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+/*about us section ends here*/
+/*Log in form*/
+#fc1 {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 50px 40px 20px 40px;
+  background-color: #ffffff;
+  box-shadow: 0px 106px 42px rgba(0, 0, 0, 0.01),
+    0px 59px 36px rgba(0, 0, 0, 0.05), 0px 26px 26px rgba(0, 0, 0, 0.09),
+    0px 7px 15px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 11px;
+  font-family: "Inter", sans-serif;
+  width:600px;
+}
+
+
+#tc1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#t1 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #212121;
+}
+
+#s1 {
+  text-align: center;
+  line-height: 1.1rem;
+  color: #8B8E98
+}
+
+#ic1{
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.icon {
+  width: 20px;
+  position: absolute;
+  z-index: 99;
+  left: 12px;
+  bottom: 9px;
+}
+
+.input_label {
+  font-size: 0.75rem;
+  color: #8B8E98;
+  font-weight: 600;
+}
+
+.input_field {
+  width: auto;
+  height: 40px;
+  padding: 0 0 0 40px;
+  border-radius: 7px;
+  outline: none;
+  border: 1px solid #e5e5e5;
+  filter: drop-shadow(0px 1px 0px #efefef)
+    drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
+  transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.input_field:focus {
+  border: 1px solid transparent;
+  box-shadow: 0px 0px 0px 2px #242424;
+  background-color: transparent;
+}
+
+.sign-in_btn {
+  width: 100%;
+  height: 40px;
+  background: royalblue;
+  border-radius: 7px;
+  outline: none;
+  cursor: pointer;
+}
+
+.sign-up {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #ffffff;
+  border-radius: 7px;
+  outline: none;
+  border: 1px solid #e5e5e5;
+  filter: drop-shadow(0px 1px 0px #efefef)
+    drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
+  cursor: pointer;
+}
+
+.separator {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  color: #8B8E98;
+}
+
+.separator .line {
+  display: block;
+  width: 100%;
+  height: 1px;
+  border: 0;
+  background-color: #e8e8e8;
+}
+
+.note {
+  font-size: 0.75rem;
+  color: #8B8E98;
+  text-decoration: underline;
+}
+.dismiss {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  color: black;
+  border: 0px solid #D1D5DB;
+  font-size: 18px;
+  font-weight: 300;
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+  transition: .3s ease;
+}
+/*about us section*/
+#header1 {
+            background-color: royalblue;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 100px;
+        }
+        #container1 {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            animation: fadeInUp 1s ease;
+        }
+        #aboutcontent1 {
+            text-align: justify;
+            line-height: 1.6;
+            animation: fadeIn 1s ease;
+        }
+        h2 {
+            color: royalblue;
+            border-bottom: 2px solid royalblue;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 24px;
+            animation: fadeInDown 1s ease;
+        }
+        .highlight {
+            color: royalblue;
+            font-weight: bold;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        #quote1 {
+            font-style: italic;
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color:royalblue;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            
+        }
+        .contact-content {
+            text-align: justify;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+        h2 {
+            color:royalblue;
+            border-bottom: 2px solid royalblue;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .contact-details {
+            margin-top: 20px;
+        }
+        .contact-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .contact-icon {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        .highlight {
+            color:royalblue;
+            font-weight: bold;
+        }
+        .feedback-form {
+            margin-top: 20px;
+        }
+        .feedback-label {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .feedback-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+        .feedback-input:focus {
+            outline: none;
+            border-color: royalblue;
+        }
+        .contact-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        .contact-input:focus {
+            outline: none;
+            border-color: royalblue;
+        }
+        .submit-button {
+            background-color:royalblue;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .submit-button:hover {
+            background-color:royalblue;
+        }
+
+/* Styling for the Follow Us section */
+.follow-us {
+    margin-top: 40px;
+}
+
+.follow-us h2 {
+    color: royalblue;
+    border-bottom: 2px solid royalblue;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.follow-us p {
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+
+}
+
+        /* Animation styles */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes scaleUp {
+            from {
+                transform: scale(0.8);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+
+        /* Social icon animation */
+        .social-icon {
+            font-size: 24px;
+            margin-right: 20px;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.2);
+        }
+
+        .active-button:active {
+  background-color: royalblue;
+}
+</style>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" style="background-color:white;margin-bottom: 0px  ;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>                        
+    </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
+      <li><a href="#"><img class="responsive" src="LMC1.png" width="300px"></a></li>
+      <li><img class="responsive" src="map pin.png" width="30px;" style="margin-top:35px;margin-left: 50px;"></li>
+      <li><a href="https://www.google.com/maps/@12.8857201,77.5504666,15z?entry=ttu"><h5 class="text" style="margin-top:25px;">Select Delivery Address</h5></a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#order"><button id="bottone5" style="margin-right: 11px;" class="active-button"><p class="text"><b>Order</b></p></button></a></li>
+      <li><a href="#aboutus"><button id="bottone5" style="margin-right: 11px;"><p class="text"><b>About Us</b></p></button></a></li>
+      <li><a href="#contactus"><button id="bottone5"><p class="text"><b>Contact Us</b></p></button></a></li>
+      <li><a href="Cart+Checkout.html"><span><button class="CartBtn">
+        <span class="IconContainer"> 
+          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512" fill="rgb(17, 17, 17)" class="cart"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
+        </span>
+        <p class="text">Cart</p>
+      </button></span></a></li>
+      <li><a href="file:///E:/Web%20development/Project/Login.html" data-toggle="modal" data-target="#loginModal"><button>
+        <span class="text">Log in</span>
+      </button></a></li>
+    </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+<br><br>
+  <div class="container-fluid">
+      <div class="rows">
+        <div class="col-lg-12">
+          <div class="search">
+            <input placeholder="Search for Medicines..." type="text">
+            <button type="submit">Go</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    
+  </ol>
+
+  <div class="carousel-inner">
+
+    <div class="item active">
+    <img class="responsive" src="img1.jpg" alt="genuine medicines" style="width:100%;height:5 00px;">
+      <div class="carousel-caption">
+        
+      </div>
+    </div>
+
+    <div class="item">
+     <img class="responsive" src="img2.jpg" alt="free home delivery" style="width:100%; height:600px;">
+      <div class="carousel-caption">
+    
+      </div>
+    </div>
+  
+    <div class="item">
+      <img src="genuine med.png" class="responsive" alt="Genuine Medicines" style="width:100%;height:600px;">
+      <div class="carousel-caption">
+        
+      </div>
+    </div>
+
+
+    <div class="item">
+      <img src="free home del.png" class="responsive" alt="Free Home Delivery" style="width:100%;height:600px;">
+      <div class="carousel-caption">
+        
+      </div>
+    </div>
+
+  </div>
+
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<br><br>
+
+<div class="container-fluid" id="order">
+<h3 style="margin-left: 15px;">Health conditions</h3>
+<br>
+<div class="rows">
+  <div class="col-lg-3">
+    <div class="card">
+      <a href="#"><img src="cold cough.jpg" alt="cold and cough" class="responsive" style="width:100%"></a>
+      <h4>Explore a curated selection<br> of cough and cold essentials for effective relief and comfort</h4>
+    </div>
+  </div>
+
+  <div class="col-lg-3">
+    <div class="card">
+      <a href="#"><img src="pain.jpg" alt="pain" class="responsive" style="width:100%"></a>
+      <h4>Discover a curated range of <br>pain relief essentials for effective comfort and well-being</h4>
+    </div>
+  </div>
+
+  <div class="col-lg-3">
+    <div class="card">
+      <a href="#"><img src="heart.jpg" alt="heart" class="responsive" style="width:100%"></a>
+      <h4>Explore curated heart health essentials for comprehensive <br>care and well-being</h4>
+    </div>
+  </div>
+
+  <div class="col-lg-3">
+    <div class="card">
+      <a href="#"><img src="diabetes.jpg" alt="diabetes" class="responsive" style="width:100%"></a>
+      <h4>Discover curated diabetes care essentials for effective management and a healthier lifestyle</h4>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="rows">
+  <div class="col-lg-3">
+    <br>
+<h3>Categories</h3>
+<br>
+    <div class="card">
+      <a href="#"><img src="skin care.jpg" alt="skin care" class="responsive" style="width:100%"></a>
+      <h4> Elevate your skincare routine<br> and unveil a timeless,<br> luminous glow</h4>
+    </div>
+  </div>
+
+  <div class="col-lg-3">
+    <br><br><br><br><br>
+    <div class="card">
+      <a href="#"><img src="baby care.jpg" alt="baby care" class="responsive" style="width:100%"></a>
+      <h4> Discover curated baby care essentials for nurturing and protection</h4>
+    </div>
+  </div>
+
+  <div class="col-lg-3">
+    <br><br><br><br><br>
+    <div class="card">
+      <a href="#"><img src="family care.jpg" alt="family care" class="responsive" style="width:100%"></a>
+      <h4>Explore curated family care essentials for holistic well-being and lasting protection</h4>
+    </div>
+  </div>
+
+  <div class="col-lg-3">
+    <br><br><br><br><br>
+    <div class="card">
+      <a href="#"><img src="daily health needs.jpg" alt="daily health needs" class="responsive" style="width:100%"></a>
+      <h4>Discover essential daily health solutions for your well-being and vitality</h4>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="rows">
+  <div class="col-lg-3">
+    <br><br>
+    <div class="card">
+      <a href="#"><img src="personal.jpg" alt="personal care" class="responsive" style="width:100%"></a>
+      <h4> Elevate daily care<br> with curated personal <br>care essentials</h4>
+    </div>
+  </div>
+
+  <div class="col-lg-3">
+    <br><br>
+    <div class="card">
+      <a href="#"><img src="devices.jpg" alt="devices" class="responsive" style="width:100%"></a>
+      <h4>Explore curated medical<br> devices for advanced<br> healthcare solutions</h4>
+    </div>
+  </div>
+
+  <div class="col-lg-3">
+    <br><br>
+    <div class="card">
+      <a href="#"><img src="womens.jpg" alt="women's care" class="responsive" style="width:100%"></a>
+      <h4>Elevate your self-care with <br>curated women's essentials for confidence and well-being</h4>
+    </div>
+  </div>
+
+  <div class="col-lg-3">
+    <br><br>
+    <div class="card">
+      <a href="#"><img src="health conditions.jpg" alt="health conditions" class="responsive" style="width:100%"></a>
+      <h4>Explore curated health <br>condition essentials for effective<br> support and well-being</h4>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+<div class="container-fluid">
+  <div class="rows">
+    <div class="col-lg-2">
+      <br>
+      <h3>Best sellers</h3>
+      <br>
+      <div class="card" id="card1">
+        <a href="#"><img src="nestle.jpg" alt="Nestle" style="width:75%"></a>
+        <h4>Nestle Nangrow Creamy Vanilla Flavour</h4>
+        <p class="price">₹549
+          <del>(₹610)</del>
+        </p>
+        <p style="color: green;">(Save 30%)</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+
+    <div class="col-lg-2">
+    
+      <div class="card" id="card1" style="margin-top: 96px;">
+        <a href="#"><img src="one touch.jpg" alt="one touch" style="width:75%"></a>
+        <h4>OneTouch Select Plus Test Strips</h4>
+        <p class="price">₹1088
+          <del>(₹1145)</del>
+        </p>
+        <p style="color: green;">(Save 5%)</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+
+    <div class="col-lg-2">
+      <div class="card" id="card1" style="margin-top: 96px;">
+        <a href="#"><img src="whey protein.jpg" alt="Protein Powder" style="width:75%"></a>
+        <h4>Optimum Nutrition Whey Protein</h4>
+        <p class="price">₹2964
+          <del>(₹3899)</del>
+        </p>
+        <p style="color: green;">(Save 24%)</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+
+    <div class="col-lg-2">
+      <div class="card" id="card1" style="margin-top: 96px;">
+        <a href="#"></a><img src="horlicks.jpg" alt="Horlicks" style="width:75%"></a>
+        <h4>Horlicks Women's Plus Caramel Flavour</h4>
+        <p class="price">₹474
+          <del>(₹590)</del>
+        </p>
+        <p style="color: green;">(Save 20%)</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+
+    <div class="col-lg-2">
+      <div class="card" id="card1" style="margin-top: 96px;">
+        <a href="#"><img src="pampers.jpg" alt="Pampers" style="width:75%"></a>
+        <h4>Pampers New Taped Diapers</h4>
+        <p class="price">₹935
+          <del>(₹1099)</del>
+        </p>
+        <p style="color: green;">(Save 15%)</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+
+    <div class="col-lg-2">
+      <div class="card" id="card1" style="margin-top: 96px;">
+        <a href="#"><img src="power gummies.jpg" alt="Power Gummies" style="width:75%"></a>
+        <h4>Power Gummies Vitamins</h4>
+        <p class="price">₹876
+          <del>(₹1200)</del>
+        </p>
+        <p style="color: green;">(Save 27%)</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="rows">
+    <div class="col-lg-2">
+    
+      <h3 style="margin-top: 40px;">Value Deals</h3>
+      <br><br>
+      <div class="card" id="card1">
+        <a href="#"><img src="Nivea.jpg" alt="Nivea" style="width:75%"></a>
+        <h4>Nivea Men Active Deodrant</h4>
+        <p class="price">₹143
+          <del>(₹285)</del>
+        </p>
+        <p style="color: green;">(Save 50%)</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+
+    <div class="col-lg-2">
+    
+      <div class="card" id="card1" style="margin-top: 116px;">
+        <a href="#"><img src="wet wipes.jpg" alt="Wet wipes" style="width:75%"></a>
+        <h4>Babio Baby Wet wipes,80 wipes</h4>
+        <p class="price">₹98
+          <del>(₹195)</del>
+        </p>
+        <p style="color: green;">(Save 50%)</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+
+    <div class="col-lg-2">
+      <div class="card" id="card1" style="margin-top:116px;">
+        <a href="#"><img src="colgate.jpg" alt="Colgate" style="width:75%"></a>
+        <h4>Colgate Sensitive Plus Toothpaste</h4>
+        <p class="price">₹98
+          <del>(₹195)</del>
+        </p>
+        <p style="color: green;">(Save 50%)</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+
+    <div class="col-lg-2">
+      <div class="card" id="card1" style="margin-top:116px;">
+        <a href="#"></a><img src="beardo.jpg" alt="Beardo" style="width:75%"></a>
+        <h4>Beardo Iceman Deo Spray</h4>
+        <p class="price">₹175
+          <del>(₹349)</del>
+        </p>
+        <p style="color: green;">(Save 50%)</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+
+    <div class="col-lg-2">
+      <div class="card" id="card1" style="margin-top:116px;">
+        <a href="#"><img src="protinex.jpg" alt="Protinex" style="width:75%"></a>
+        <h4>Protinex Diabetes Care Vanilla Flavour</h4>
+        <p class="price">₹655
+          <del>(₹740)</del>
+        </p>
+        <p style="color: green;">(Save 12%)</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+
+    <div class="col-lg-2">
+      <div class="card" id="card1" style="margin-top:116px;">
+        <a href="#"><img src="sebamed.jpg" alt="Seba med" style="width:75%"></a>
+        <h4>Sebamed Baby Cleansing Bar</h4>
+        <p class="price">₹401
+          <del>(₹430)</del>
+        </p>
+        <p style="color: green;">(Save 7%)</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div id="loginModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        
+          <!-- Your login form or content goes here -->
+          <form class="form_container" id="fc1">
+            <div class="title_container" id="tc1">
+                <button type="button" class="dismiss" onclick="window.location.href='index.html'">×</button>
+              <p class="title" id="t1"><h2>Login to your Account</h2></p>
+              <span class="subtitle" id="s1" style="font-size: 15px;">Just create an account and enjoy the experience.</span>
+            </div>
+            <br>
+            <div class="input_container" id="ic1">
+              <label class="input_label" for="email_field" style="font-size: 16px;text-align: left;">Email</label>
+              <svg fill="none" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg" class="icon">
+                <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#141B34" d="M7 8.5L9.94202 10.2394C11.6572 11.2535 12.3428 11.2535 14.058 10.2394L17 8.5"></path>
+                <path stroke-linejoin="round" stroke-width="1.5" stroke="#141B34" d="M2.01577 13.4756C2.08114 16.5412 2.11383 18.0739 3.24496 19.2094C4.37608 20.3448 5.95033 20.3843 9.09883 20.4634C11.0393 20.5122 12.9607 20.5122 14.9012 20.4634C18.0497 20.3843 19.6239 20.3448 20.7551 19.2094C21.8862 18.0739 21.9189 16.5412 21.9842 13.4756C22.0053 12.4899 22.0053 11.5101 21.9842 10.5244C21.9189 7.45886 21.8862 5.92609 20.7551 4.79066C19.6239 3.65523 18.0497 3.61568 14.9012 3.53657C12.9607 3.48781 11.0393 3.48781 9.09882 3.53656C5.95033 3.61566 4.37608 3.65521 3.24495 4.79065C2.11382 5.92608 2.08114 7.45885 2.01576 10.5244C1.99474 11.5101 1.99475 12.4899 2.01577 13.4756Z"></path>
+              </svg>
+              <input placeholder="Email" title="Input title" name="input-name" type="text" class="input_field" id="email_field">
+            </div>
+            <div class="input_container" id="ic1">
+              <label class="input_label" for="password_field" style="font-size: 16px;text-align: left;">Password</label>
+              <svg fill="none" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg" class="icon">
+                <path stroke-linecap="round" stroke-width="1.5" stroke="#141B34" d="M18 11.0041C17.4166 9.91704 16.273 9.15775 14.9519 9.0993C13.477 9.03404 11.9788 9 10.329 9C8.67911 9 7.18091 9.03404 5.70604 9.0993C3.95328 9.17685 2.51295 10.4881 2.27882 12.1618C2.12602 13.2541 2 14.3734 2 15.5134C2 16.6534 2.12602 17.7727 2.27882 18.865C2.51295 20.5387 3.95328 21.8499 5.70604 21.9275C6.42013 21.9591 7.26041 21.9834 8 22"></path>
+                <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#141B34" d="M6 9V6.5C6 4.01472 8.01472 2 10.5 2C12.9853 2 15 4.01472 15 6.5V9"></path>
+                <path fill="#141B34" d="M21.2046 15.1045L20.6242 15.6956V15.6956L21.2046 15.1045ZM21.4196 16.4767C21.7461 16.7972 22.2706 16.7924 22.5911 16.466C22.9116 16.1395 22.9068 15.615 22.5804 15.2945L21.4196 16.4767ZM18.0228 15.1045L17.4424 14.5134V14.5134L18.0228 15.1045ZM18.2379 18.0387C18.5643 18.3593 19.0888 18.3545 19.4094 18.028C19.7299 17.7016 19.7251 17.1771 19.3987 16.8565L18.2379 18.0387ZM14.2603 20.7619C13.7039 21.3082 12.7957 21.3082 12.2394 20.7619L11.0786 21.9441C12.2794 23.1232 14.2202 23.1232 15.4211 21.9441L14.2603 20.7619ZM12.2394 20.7619C11.6914 20.2239 11.6914 19.358 12.2394 18.82L11.0786 17.6378C9.86927 18.8252 9.86927 20.7567 11.0786 21.9441L12.2394 20.7619ZM12.2394 18.82C12.7957 18.2737 13.7039 18.2737 14.2603 18.82L15.4211 17.6378C14.2202 16.4587 12.2794 16.4587 11.0786 17.6378L12.2394 18.82ZM14.2603 18.82C14.8082 19.358 14.8082 20.2239 14.2603 20.7619L15.4211 21.9441C16.6304 20.7567 16.6304 18.8252 15.4211 17.6378L14.2603 18.82ZM20.6242 15.6956L21.4196 16.4767L22.5804 15.2945L21.785 14.5134L20.6242 15.6956ZM15.4211 18.82L17.8078 16.4767L16.647 15.2944L14.2603 17.6377L15.4211 18.82ZM17.8078 16.4767L18.6032 15.6956L17.4424 14.5134L16.647 15.2945L17.8078 16.4767ZM16.647 16.4767L18.2379 18.0387L19.3987 16.8565L17.8078 15.2945L16.647 16.4767ZM21.785 14.5134C21.4266 14.1616 21.0998 13.8383 20.7993 13.6131C20.4791 13.3732 20.096 13.1716 19.6137 13.1716V14.8284C19.6145 14.8284 19.619 14.8273 19.6395 14.8357C19.6663 14.8466 19.7183 14.8735 19.806 14.9391C19.9969 15.0822 20.2326 15.3112 20.6242 15.6956L21.785 14.5134ZM18.6032 15.6956C18.9948 15.3112 19.2305 15.0822 19.4215 14.9391C19.5091 14.8735 19.5611 14.8466 19.5879 14.8357C19.6084 14.8273 19.6129 14.8284 19.6137 14.8284V13.1716C19.1314 13.1716 18.7483 13.3732 18.4281 13.6131C18.1276 13.8383 17.8008 14.1616 17.4424 14.5134L18.6032 15.6956Z"></path>
+              </svg>
+              <input placeholder="Password" title="Input title" name="input-name" type="password" class="input_field" id="password_field">
+            </div>
+            <button title="Sign In" type="submit" class="sign-in_btn" action="#">
+              <span style="text-decoration: none;color:white; font-weight: bold;">Sign In</span>
+            </button>
+          
+            <div class="separator">
+              <hr class="line">
+              <span>Or</span>
+              <hr class="line">
+            </div>
+            <button title="Sign Up" type="submit" class="sign-up" action="Lakshmi medical centre.html" style="background-color: #32a861;">
+              <span><a href="Create new account.html" style="text-decoration: none;color:white; font-weight: bold;">Create new account</a></span>
+            </button>
+            <p class="note" style="font-size: 13px;">Terms of use &amp; Conditions</p>
+          </form>
+      </div>
+    </div>
+  </div>
+  
+<div id="aboutus">
+  <div class="header" id="header1">
+    <h1>Lakshmi Medical Center</h1>
+</div>
+<div class="container" id="container1">
+    <h2>About Us</h2>
+    <div class="about-content" id="aboutcontent1">
+        <p>Lakshmi Medical Center, established in <span class="highlight">1992</span>, has been proudly serving the healthcare needs of the <span class="highlight">Jayanagar 4th T Block</span> community in <span class="highlight">Bangalore</span> for decades. We are dedicated to providing exceptional healthcare services beyond prescriptions.</p>
+        <p>With nearly three decades of dedicated service, our store has been a <span class="highlight">pillar of support</span> for the community, providing essential medicines and healthcare products to our valued customers.</p>
+        <p>Located conveniently in the heart of Jayanagar, we are dedicated to providing exceptional healthcare services beyond prescriptions. Our commitment to your well-being extends to our <span class="highlight">free home delivery service</span>, ensuring that you have access to the medications you need from the comfort of your home.</p>
+        <p>At Lakshmi Medical Center, we understand that genuine care goes beyond medications. Our <span class="highlight">knowledgeable and friendly team</span> is here to assist you in finding the right solutions for your health and wellness needs. With a customer-centered approach, we are honored to be your <span class="highlight">trusted healthcare partner</span>.</p>
+        <div class="quote" id="quote1">
+            <p id="contactus">"Health is the greatest wealth, and a well-stocked medical store is its treasure chest."</p>
+            <p>- J. Stanford</p>
+        </div>
+    </div>
+
+  <!-- ... rest of your content ... -->
+  <br>
+  <h2>Contact Us</h2>
+  <div class="contact-content">
+      <p>If you have any questions or need assistance, please don't hesitate to reach out to us. We're here to help!</p>
+      <div class="contact-details">
+          <div class="contact-info">
+              <i class="fas fa-phone contact-icon"></i>
+              <p><span class="highlight">Phone:</span> +91 123 456 7890</p>
+          </div>
+          <div class="contact-info">
+              <i class="far fa-envelope contact-icon"></i>
+              <p><span class="highlight">Email:</span> info@lakshmimedical.com</p>
+          </div>
+      </div>
+      <p>You can also visit our store at:</p>
+      <p><span class="highlight">Address:</span> 1234 Medical Street, Jayanagar, Bangalore</p>
+      <div class="feedback-form">
+          <p class="feedback-label">Your Name:</p>
+          <input class="contact-input" type="text" placeholder="Your Name">
+          <p class="feedback-label">Your Phone Number:</p>
+          <input class="contact-input" type="text" placeholder="Your Phone Number">
+          <p class="feedback-label">Your Suggestions or Complaints:</p>
+          <textarea class="feedback-input" rows="5" placeholder="Type your feedback here"></textarea>
+          <button class="submit-button">Submit</button>
+      </div>
+      <div class="follow-us">
+          <h2>Follow Us</h2>
+          <p>Stay connected with us on social media for updates and news.</p>
+          <div class="social-icons">
+              <a href="https://www.facebook.com/lakshmimedicalcenter" target="_blank" class="social-icon">
+                  <i class="fab fa-facebook" style="color:#1877F2"></i>
+              </a>
+              <a href="https://www.instagram.com/lakshmimedicalcenter" target="_blank" class="social-icon">
+                  <i class="fab fa-instagram" style="color:#833AB4"></i>
+              </a>
+              <a href="https://twitter.com/lakshmimedical" target="_blank" class="social-icon">
+                  <i class="fab fa-twitter" style="color:#00acee"></i>
+              </a>
+          </div>
+      </div>
+      
+      
+  </div>
+</div>
+
+</body>
+</html>
